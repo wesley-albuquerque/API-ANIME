@@ -22,6 +22,6 @@ app.UseHttpsRedirection();
 
 //app.UseAuthorization();
 
-app.MapControllers();
+//app.MapControllers();
 app.MapControllerRoute(name: "default", "swagger/index.html");
 app.Run();
