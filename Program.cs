@@ -16,12 +16,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(c => { c.RoutePrefix = ""; });
 app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseHttpsRedirection();
 
 //app.UseAuthorization();
 
-//app.MapControllers();
-app.MapControllerRoute(name: "default", "swagger/index.html");
+app.MapControllers();
 app.Run();
