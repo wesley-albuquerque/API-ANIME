@@ -12,8 +12,8 @@ namespace API_ANIME.Controllers
     {
         private readonly string StrinConnection = @"Server = localhost;
                                                 Database=personal_site;
-                                                User=wesley;
-                                                Password=waa123";
+                                                User=admin;
+                                                Password=we5588";
         public MySqlConnection Conexao { get; set; }
         public string Sql { get; set; }
         public MySqlCommand Cmd { get; set; }
