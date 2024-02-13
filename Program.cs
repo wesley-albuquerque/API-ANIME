@@ -16,7 +16,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseSwagger();
-app.UseSwaggerUI(c => { c.RoutePrefix = ""; });
+app.UseSwaggerUI(c => { c.RoutePrefix = "swagger"; });
 app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseHttpsRedirection();
 
